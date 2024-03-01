@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    @apply bg-dark-300 text-white;
+    scrollbar-gutter: stable;
+  }
+
+  * {
+    @apply scroll-smooth font-poppins;
+    letter-spacing: 0.2px;
+    scrollbar-color: #3e3e42 #1e1e1e;
+  }
+
+  p {
+    @apply text-base font-normal leading-6;
+  }
+
+  button {
+    @apply outline outline-2 outline-transparent transition-all duration-300 ease-in-out focus-visible:outline-grey;
+  }
+
+  input {
+    background-color: inherit;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    background-position: center;
+    background-size: 20px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0icmdiYSgxNjksMTY5LDE2OSwxKSI+PHBhdGggZD0iTTkgMVYzSDE1VjFIMTdWM0gyMUMyMS41NTIzIDMgMjIgMy40NDc3MiAyMiA0VjIwQzIyIDIwLjU1MjMgMjEuNTUyMyAyMSAyMSAyMUgzQzIuNDQ3NzIgMjEgMiAyMC41NTIzIDIgMjBWNEMyIDMuNDQ3NzIgMi40NDc3MiAzIDMgM0g3VjFIOVpNMjAgMTFINFYxOUgyMFYxMVpNOCAxM1YxNUg2VjEzSDhaTTEzIDEzVjE1SDExVjEzSDEzWk0xOCAxM1YxNUgxNlYxM0gxOFpNNyA1SDRWOUgyMFY1SDE3VjdIMTVWNUg5VjdIN1Y1WiI+PC9wYXRoPjwvc3ZnPg==");
+    cursor: pointer;
+  }
+
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    background-position: center;
+    background-size: 20px;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0icmdiYSgxNjksMTY5LDE2OSwxKSI+PHBhdGggZD0iTTEyIDIyQzYuNDc3MTUgMjIgMiAxNy41MjI4IDIgMTJDMiA2LjQ3NzE1IDYuNDc3MTUgMiAxMiAyQzE3LjUyMjggMiAyMiA2LjQ3NzE1IDIyIDEyQzIyIDE3LjUyMjggMTcuNTIyOCAyMiAxMiAyMlpNMTIgMjBDMTYuNDE4MyAyMCAyMCAxNi40MTgzIDIwIDEyQzIwIDcuNTgxNzIgMTYuNDE4MyA0IDEyIDRDNy41ODE3MiA0IDQgNy41ODE3MiA0IDEyQzQgMTYuNDE4MyA3LjU4MTcyIDIwIDEyIDIwWk0xMyAxMkgxN1YxNEgxMVY3SDEzVjEyWiI+PC9wYXRoPjwvc3ZnPg==");
+    cursor: pointer;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-text-fill-color: #f8f9fa;
+    -webkit-box-shadow: 0 0 0px 1000px #1e1e1e inset;
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  h1 {
+    @apply text-3xl font-semibold;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold;
+  }
+
+  h3 {
+    @apply text-xl font-medium;
+  }
+
+  h4 {
+    @apply text-base font-medium;
+  }
+
+  h5 {
+    @apply text-sm font-medium leading-none;
+  }
+
+  h6 {
+    @apply text-xs font-medium leading-none;
+  }
+
+  *::-webkit-scrollbar {
+    @apply h-2.5 w-2.5;
+  }
+  *::-webkit-scrollbar-track {
+    @apply rounded bg-dark-100;
+  }
+
+  *::-webkit-scrollbar-track:hover {
+    @apply bg-dark-100;
+  }
+
+  *::-webkit-scrollbar-track:active {
+    @apply bg-dark-100;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    @apply rounded bg-dark-500;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    @apply bg-grey;
+  }
+
+  *::-webkit-scrollbar-thumb:active {
+    @apply bg-grey;
+  }
+
+  .pattern {
+    background: repeating-linear-gradient(
+        90deg,
+        #202020 0,
+        #202020 3%,
+        transparent 0,
+        transparent 50%
+      ),
+      repeating-linear-gradient(
+        180deg,
+        #202020 0,
+        #202020 3%,
+        transparent 0,
+        transparent 50%
+      );
+    @apply bg-dark-100 bg-[length:3em_3em];
+  }
+
+  .fill-body {
+    min-height: calc(100svh - theme("spacing.header_height"));
+  }
+
+  .transition-300 {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .scrollbar-gutter {
+    scrollbar-gutter: stable;
+  }
+}
