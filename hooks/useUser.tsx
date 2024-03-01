@@ -113,7 +113,7 @@ const useUser = () => {
         }
 
         toast.success("User created - try logging in!");
-        router.refresh();
+        router.push("/login");
       }
     } catch (error) {
       console.log("Error signing up", error);
