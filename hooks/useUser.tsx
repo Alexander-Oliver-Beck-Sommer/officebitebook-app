@@ -115,7 +115,7 @@ const useUser = () => {
           return;
         }
 
-        router.push("/login/sign-up/verification-pending");
+        toast.success("User created - try logging in!");
       }
     } catch (error) {
       console.log("Error signing up", error);
