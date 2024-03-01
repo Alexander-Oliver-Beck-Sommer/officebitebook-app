@@ -3,7 +3,7 @@ import Link from "next/link";
 import ArrowIcon from "@/components/Icons/ArrowIcon";
 import QuestionIcon from "@/components/Icons/QuestionIcon";
 import ProfileIcon from "../Icons/ProfileIcon";
-import LogIcon from "../icons/LogIcon";
+import LogIcon from "@/components/Icons/LogIcon";
 import OfficeIcon from "../Icons/OfficeIcon";
 
 type Icons =
